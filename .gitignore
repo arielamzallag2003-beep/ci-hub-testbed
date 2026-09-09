@@ -3,3 +3,8 @@
 node_modules/
 target/
 __pycache__/
+
+# Real .NET build output is ignored. The committed artifacts that hygiene is
+# meant to warn about are the deliberate ones in bin/ and data/ at the root.
+dotnet/**/bin/
+dotnet/**/obj/
