@@ -1,0 +1,8 @@
+{
+  "name": "testbed-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node marker so the hub detects a JavaScript stack.",
+  "main": "index.js",
+  "license": "MIT"
+}

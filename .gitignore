@@ -1,0 +1,5 @@
+# NOTE: deliberately does NOT ignore bin/ or data/, so the hub's hygiene job
+# has committed build artifacts to warn about. That warning is expected.
+node_modules/
+target/
+__pycache__/
