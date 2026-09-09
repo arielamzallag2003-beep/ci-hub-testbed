@@ -15,9 +15,8 @@ public class CalculatorTests
     public void ThrowsOnDivideByZero() =>
         Assert.Throws<DivideByZeroException>(() => Calculator.Divide(1, 0));
 
-    // DELIBERATELY WRONG. 10 / 4 is 2.5, not 3.
-    // Exists so that CI has a real .NET failure to report.
+    // Fixed: 10 / 4 really is 2.5.
     [Fact]
-    public void DividesCorrectly_FailsOnPurpose() =>
-        Assert.Equal(3.0, Calculator.Divide(10, 4));
+    public void DividesCorrectly() =>
+        Assert.Equal(2.5, Calculator.Divide(10, 4));
 }

@@ -18,4 +18,4 @@ add_test(NAME cpp_pass COMMAND pass_test)
 # hub reports a real test failure rather than swallowing it.
 add_executable(fail_test tests/fail_test.cpp)
 target_link_libraries(fail_test PRIVATE mathx)
-add_test(NAME cpp_fail_on_purpose COMMAND fail_test)
+add_test(NAME cpp_now_correct COMMAND fail_test)

@@ -3,13 +3,12 @@
 
 #include "mathx.h"
 
-// DELIBERATELY WRONG. 2 + 2 is 4, not 5.
-// Exists so that CI has something real to catch.
+// Fixed: the expectation now matches reality.
 int main() {
   const int actual = add(2, 2);
-  const int expected = 5;
+  const int expected = 4;
   if (actual != expected) {
-    std::printf("cpp_fail_on_purpose: expected %d, got %d\n", expected, actual);
+    std::printf("cpp_now_correct: expected %d, got %d\n", expected, actual);
     return EXIT_FAILURE;
   }
   return EXIT_SUCCESS;
